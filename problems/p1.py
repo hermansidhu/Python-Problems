@@ -4,3 +4,15 @@
 # example, passing the previous spam list to the function would return &#39;apples, bananas,
 # tofu, and cats&#39;. But your function should be able to work with any list value passed to
 # it
+
+
+def result(list):
+    string = ""
+    for i in range(len(list)-1):
+        string = string + list[i] + ", "
+    string = string + "and " + list[-1]
+    return string
+
+
+spam = ['apples', 'bananas', 'tofu', 'cats']
+print(result(spam))
